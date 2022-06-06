@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#hangManText {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 45px;
+}
+
+#Alphabet {
+    display: grid;
+    margin-top: 20px;
+    width: 1100px;
+    grid-template-columns: repeat(17, 1fr);
+}
+
+#Alphabet div{
+    width: 10px;
+    height: 10px;
+    padding: 15px 20px 20px 15px;
+    margin: 1.5px;
+    border: 1px solid black;
+    margin-top: 10px;
+
+    transition: background-color 0.5s;
+
+}
+
+#Alphabet div:hover {
+    background-color: rgba(137, 43, 226, 0.755);
+    color: white;
+}
+#Alphabet .used
+{
+    background-color: rgba(143, 42, 143, 0.282);
+    border: 1 solid red;
+}
+
+#hangManPicture img {
+    height: 150px;
+    width: 100px;
+    margin-left: 515px;
+    margin-top: 30px;
+    justify-content: center;
+
+}
+
+#clue p {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 15px;
+    letter-spacing: 0.5rem;
+}
+#gameOver p
+{
+    display: none;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 25px;
+    letter-spacing:5px;
+
+}
+#reload
+{
+    display: none;
+    text-align: end;
+    width: 150px;
+    height: 55px;
+    padding: 25px  38px 0 0;
+    font-size: 25px;
+    margin-left: 750px;
+    margin-top: -350px;
+    border-radius: 35px;
+    background-color: rgba(117, 37, 191, 0.686);
+    color: white;
+    
+    
+}
+#reload:hover
+{
+    background-color: rgba(68, 18, 114, 0.919);
+}
